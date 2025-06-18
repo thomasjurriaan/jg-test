@@ -1,0 +1,150 @@
+<html>
+ <head>
+  <title>
+   Jungle Gym Speeltoestel Configurator
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+      .font-montserrat {
+        font-family: 'Montserrat', Arial, sans-serif;
+      }
+      .font-roboto {
+        font-family: 'Roboto', Arial, sans-serif;
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+  </style>
+ </head>
+ <body class="bg-[#f8f8f2] min-h-screen flex flex-col">
+  <!-- Header -->
+  <div class="w-full flex items-center justify-between px-2 sm:px-8 pt-2 pb-1 bg-white border-b border-[#eaeaea]">
+   <div class="flex items-center">
+    <span class="font-montserrat font-bold text-[38px] text-[#7fc25e] leading-none tracking-tight mr-2">
+     Jungle Gym
+    </span>
+    <div class="flex flex-col justify-center">
+     <span class="text-[10px] text-[#bdbdbd] font-roboto -mt-1 ml-1">
+      since 1988
+     </span>
+     <span class="text-[11px] text-[#3d4c2a] font-roboto font-medium ml-1 mt-1 tracking-wide">
+      Speeltoestel configurator
+     </span>
+    </div>
+   </div>
+   <div class="flex items-center">
+    <button class="w-9 h-9 flex items-center justify-center rounded-md hover:bg-gray-100 transition">
+     <i class="fas fa-ellipsis-v text-[#3d4c2a] text-xl">
+     </i>
+    </button>
+   </div>
+  </div>
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-row w-full h-full overflow-hidden">
+   <!-- Left: Playground 3D Model -->
+   <div class="flex-1 flex items-center justify-center relative bg-gradient-to-b from-[#f8f8f2] to-[#f3f1e7] min-h-[700px]">
+    <!-- 3D Playground Image -->
+    <img alt="3D playground model with pink slide and wooden tower with flag and colored bars" class="w-[700px] h-[600px] object-contain select-none pointer-events-none" draggable="false" height="600" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-nvGZmVvZ7raNaLO4KVEdj8fp/user-1lIFdfB1fxHtm3oEgqQH61p8/img-KNYiXn59hATApU1x6eCMmbcE.png?st=2025-06-18T12%3A56%3A47Z&amp;se=2025-06-18T14%3A56%3A47Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=cc612491-d948-4d2e-9821-2683df3719f5&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2025-06-18T03%3A25%3A07Z&amp;ske=2025-06-19T03%3A25%3A07Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=zn3ffJtRet8aTa8LMUdW5HcO%2B1hG9onZc/nb41QR4aU%3D" width="700"/>
+    <!-- Top icon -->
+    <div class="absolute left-[320px] top-[70px]">
+     <div class="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-[#eaeaea] shadow-md">
+      <i class="fas fa-warehouse text-[#3d4c2a] text-xl">
+      </i>
+     </div>
+    </div>
+    <!-- Plus icons -->
+    <div class="absolute left-[260px] top-[220px]">
+     <div class="w-8 h-8 flex items-center justify-center bg-white rounded-full border border-[#eaeaea] shadow-md">
+      <i class="fas fa-plus text-[#3d4c2a] text-lg">
+      </i>
+     </div>
+    </div>
+    <div class="absolute left-[410px] top-[320px]">
+     <div class="w-8 h-8 flex items-center justify-center bg-white rounded-full border border-[#eaeaea] shadow-md">
+      <i class="fas fa-plus text-[#3d4c2a] text-lg">
+      </i>
+     </div>
+    </div>
+    <div class="absolute left-[200px] top-[400px]">
+     <div class="w-8 h-8 flex items-center justify-center bg-white rounded-full border border-[#eaeaea] shadow-md">
+      <i class="fas fa-plus text-[#3d4c2a] text-lg">
+      </i>
+     </div>
+    </div>
+    <!-- Centered Tooltip -->
+    <div class="absolute left-1/2 top-[370px] -translate-x-1/2">
+     <div class="bg-[#232a25] text-white text-[17px] font-roboto font-medium rounded-lg px-6 py-3 shadow-lg">
+      Klik op een '+' om te starten
+     </div>
+    </div>
+   </div>
+   <!-- Right: Options Panel -->
+   <div class="w-[420px] min-w-[350px] bg-[#fafaf5] flex flex-col px-10 pt-14 pb-4">
+    <div>
+     <div class="font-montserrat font-bold text-[24px] text-[#3d4c2a] mb-2">
+      Kies jouw opties
+     </div>
+     <div class="text-[#232a25] text-[15px] font-roboto leading-[1.5]">
+      Klik op een + en kies uit de opties wat jij aan die kant wil plaatsen. Om de afmeting van een speeltoorn te wijzigen, klik op het toren-icoon bovenin.
+     </div>
+    </div>
+   </div>
+   <!-- Right vertical icons -->
+   <div class="absolute right-[38px] top-[420px] flex flex-col space-y-2 z-10">
+    <button class="w-10 h-10 bg-white border border-[#eaeaea] rounded-md flex items-center justify-center shadow hover:bg-gray-100">
+     <img alt="cm icon" class="w-5 h-5" height="20" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-nvGZmVvZ7raNaLO4KVEdj8fp/user-1lIFdfB1fxHtm3oEgqQH61p8/img-MCWJP4qZdedmOuZw83efmf2h.png?st=2025-06-18T12%3A56%3A42Z&amp;se=2025-06-18T14%3A56%3A42Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=cc612491-d948-4d2e-9821-2683df3719f5&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2025-06-18T09%3A13%3A45Z&amp;ske=2025-06-19T09%3A13%3A45Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=b1/OwRjewTf4uLOSjjpZpEYg2bIxkpA6k5a7M8lSJLk%3D" width="20"/>
+    </button>
+    <button class="w-10 h-10 bg-white border border-[#eaeaea] rounded-md flex items-center justify-center shadow hover:bg-gray-100">
+     <img alt="hout icon" class="w-5 h-5" height="20" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-nvGZmVvZ7raNaLO4KVEdj8fp/user-1lIFdfB1fxHtm3oEgqQH61p8/img-VQPadXd0XsQqAGN3dKcyvtVR.png?st=2025-06-18T12%3A56%3A44Z&amp;se=2025-06-18T14%3A56%3A44Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=cc612491-d948-4d2e-9821-2683df3719f5&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2025-06-18T10%3A53%3A06Z&amp;ske=2025-06-19T10%3A53%3A06Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=71O98y3oCqLJXPhCx5MICsRny%2B62KZCN/aXHBPpOd1o%3D" width="20"/>
+    </button>
+    <button class="w-10 h-10 bg-white border border-[#eaeaea] rounded-md flex items-center justify-center shadow hover:bg-gray-100">
+     <i class="fas fa-undo text-[#3d4c2a] text-lg">
+     </i>
+    </button>
+   </div>
+  </div>
+  <!-- Footer -->
+  <div class="w-full flex items-center justify-between px-6 py-4 bg-white border-t border-[#eaeaea]">
+   <div class="flex items-center">
+    <button class="w-8 h-8 flex items-center justify-center rounded-full border border-[#eaeaea] hover:bg-gray-100 transition mr-4">
+     <i class="fas fa-chevron-left text-[#232a25] text-lg">
+     </i>
+    </button>
+    <span class="font-montserrat font-bold text-[#7fc25e] text-[20px]">
+     Jungle Gym
+    </span>
+   </div>
+   <div class="flex flex-col items-center">
+    <span class="text-[#232a25] text-[15px] font-roboto">
+     Jouw speeltoestel
+     <span class="font-bold text-[#232a25] text-[17px] ml-2">
+      € 425,00
+     </span>
+    </span>
+    <span class="text-[#232a25] text-[12px] font-roboto mt-1">
+     Gratis levering in 5-10 werkdagen; kies zelf een bezorgdag.
+    </span>
+   </div>
+   <div class="flex items-center space-x-3">
+    <button class="bg-white border border-[#232a25] text-[#232a25] text-[16px] font-roboto rounded-full px-6 py-2 shadow hover:bg-gray-100 transition">
+     Opslaan voor later
+    </button>
+    <button class="bg-[#232a25] text-white text-[16px] font-roboto rounded-full px-7 py-2 shadow hover:bg-[#3d4c2a] transition">
+     Rond af
+    </button>
+   </div>
+  </div>
+ </body>
+</html>
